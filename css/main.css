@@ -1,0 +1,31 @@
+/************************** Fonts Styles **************************/
+/* rubik-regular - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),         url('../fonts/rubik-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/rubik-v21-latin-regular.woff') format('woff'), /* Modern Browsers */  }
+ /* rubik-500 - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/rubik-v21-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/rubik-v21-latin-500.woff') format('woff'), /* Modern Browsers */
+}
+
+:root{
+    --main-bg-color: #fff;
+    --nav-text-color: #515151;
+    --main-text-color: #202020;
+    --news-time-text-color: #6B6D97;
+    --popular-news-bg-color: #f6f6f9; 
+    --footer-bg-color: #295093;
+}
+
+body{
+    font-family: "Rubik", "Arial", sans-serif;
+    font-weight: 500;
+}
