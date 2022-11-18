@@ -193,132 +193,127 @@ a{
 }
 /******************** Aside styles end *******************/
 
-/******************** Main styles start ******************/
-/*** Statistics styles start ***/
-.coronavirus-statistics{
-    padding: 40px 0 40px 35px;
-    width: 1205px;
-    height: 53px;
+/******************** Main styles start *******************/
+.site-main{
+    background-color: #fff;
+}
+
+/* Covid section styles start */
+.covid-section{
+    margin-bottom: 18px;
+}
+
+.covid-info__list{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #F6F6F9;
+    padding-top: 30px;
+    padding-right: 72px;
+    padding-bottom: 29px;
+    padding-left: 35px;
+    width: 100%;
+    background-color: var(--popular-news-bg-color);
     border-radius: 5px;
 }
 
-.vertical1{
-    width: 2px;
-    height: 74px;
-    background: #EB5569;
+.covid-info__item{
+    display: block;
+    margin-right: 30px;
+    background-image: url("../images/icons/icon-covid.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    content: "";
 }
 
-.vertical{
-    width: 2px;
-    height: 49px;
-    background: #F4CCD1;
+.covid-info__item:nth-child(1){
+    width: 373px;
+    border-right: 2px solid #EB5569;
 }
 
-.coronavirus-statistics__card{
-    width: 300px;
-    display: flex;
-    align-items: center;
-    line-height: 21px;
-    gap: 20px;
+.covid-info__item:nth-child(2){
+    width: 291px;
+    background-image: url("../images/icons/icon-infected.svg");
+    padding-left: 58px;
+    border-right: 2px solid #F4CCD1;
 }
 
-.coronavirus-statistics__card1{
-    width: 196px;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    gap: 19px;
+.covid-info__item:nth-child(3){
+    width: 260px;
+    background-image: url("../images/icons/icon-recovered.svg");
+    padding-left: 58px;
+    border-right: 2px solid #F4CCD1;
 }
 
-.coronavirus-statistics__desc{
+.covid-info__item:nth-child(4){
+    width: 125px;
+    background-image: url("../images/icons/icon-dead.svg");
+    padding-left: 58px;
+}
+
+.covid-info__title{
+    margin-left: 68px;
     font-size: 20px;
-    color: #000000;
+    line-height: 24px;
+    color: #000;
 }
 
-.coronavirus-statistics__desc1{
+.covid-info__subtitle{
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.subtitle-color__red{
     color: #DB0000;
 }
 
-.coronavirus-statistics__desc2{
+.subtitle-color__green{
     color: #05B135;
 }
-/*** Statistics style end ***/
 
-/*** News styles start ***/
-.site-news{
+.subtitle-color__dark{
+    color: #000;
+}
+
+.covid-info__number{
+    margin: 0;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+}
+/* Covid section styles end */
+
+/* News section styles start */
+.news-section{
+    margin-bottom: 34px;
+}
+
+.news-section__list{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.site-news__card{
-    margin-top: 18px;
-    width: 388px;
-    height: 280px;
+.news-section__item{
+    width: 386px;
+    margin-bottom: 18px;
 }
 
-.news__card-desc{
-    width: 380px;
-    height: 42px;
+.news-section__title{
     font-size: 17px;
     line-height: 20px;
     color: var(--main-text-color);
 }
 
-.news__card-time{
-    width: 125px;
-    height: 19px;
+.news-section__time{
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: var(--news-time-text-color);
-}
-/*** News styles end ***/
-
-/*** Notifications styles start ***/
-.notification{
-    margin-top: 34px;
-    padding: 0 20px 0 34px;
-    width: 1190px;
-    height: 91px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FCF3E0;
-    border-radius: 5px;
-    gap: 224px;
-}
-.notification-start{
-    display: flex;
-    align-items: center;
-    gap: 18px;
+    color: #6B6D97;    
 }
 
-.notification-text{
-    width: 610px;
-    height: 26px;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-}
 
-.notification-btn{
-    width: 264px;
-    height: 42px;
-    background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
-    border-radius: 5px;
-}
-.btn-text{
-    margin: auto;
-    width: 241px;
-    height: 26px;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-/*** Notifications styles end ***/
-/******************** Main styles end *********************/
+/* News section styles end */
+/******************** Main styles end *******************/
