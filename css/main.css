@@ -34,6 +34,10 @@
     padding-left: 20px;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 /* DRY - Don't repeat yourself! */
 /* KISS - Keep it simple, stupid! */
 /* YAGNI - Your aren't gonna need it! */
@@ -191,104 +195,131 @@ a{
     width: 100%;
     height: 99px;
 }
-
-.site-aside__end{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-    background-color: #f6f6f9;
-    height: 144px;
-    align-items: center;
-}
-.site-aside__covid-logo{
-    padding: 44px 25px 44px 35px;
-}
-.site-aside__title{
-    width: 232px;
-    height: 50px;
-    
-}
-.line-aside-start{
-    width: 2px;
-    height: 74px;
-    left: 525px;
-    top: 384px;
-    background: #EB5569;
-}
-.site-aside__mask-logo{
-    padding: 48px 0 47px 30px;
-}
-
-.site-aside__title-infected{
-    padding: 41px 42px 40px 0;
-    width: 161px 52px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #DB0000;
-}
-
-.line-aside-center{
-    width: 2px;
-    height: 49px;
-    left: 814px;
-    top: 396px;
-    background: #F4CCD1;
-}
-.aside-title{
-    color: var(--main-text-color);
-}
-
-.line-aside-end{
-    width: 2px;
-    height: 49px;
-    left: 1072px;
-    top: 396px;
-    background: #F4CCD1;
-}
-.site-aside__title-end{
-    padding: 41px 70px 40px 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    
-    color: #000000;
-}
-.site-aside__logo-end{
-    padding: 53px 0 51px 27px;
-}
-.site-aside__title-mask{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #05B135;
-}
 /******************** Aside styles end *******************/
 
 /******************** Main styles start *******************/
-
-.card__img{
-    margin-top: 18px;
-
-    background: url(image.png);
-    border-radius: 5px;
+.site-main{
+    background-color: #fff;
 }
-.main{
 
-    flex-wrap: wrap;
+/* Covid section styles start */
+.covid-section{
+    margin-bottom: 18px;
+}
+
+.covid-info__list{
     display: flex;
     justify-content: space-between;
-}
-.card__title{
-    width: 380px;
-    height: 42px;
-    font-size: 17px;
-    line-height: 20px;
-    color: var(--main-text-color)
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 72px;
+    padding-bottom: 29px;
+    padding-left: 35px;
+    width: 100%;
+    background-color: var(--popular-news-bg-color);
+    border-radius: 5px;
 }
 
+.covid-info__item{
+    display: block;
+    margin-right: 30px;
+    background-image: url("../images/icons/icon-covid.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.covid-info__item:nth-child(1){
+    width: 373px;
+    border-right: 2px solid #EB5569;
+}
+
+.covid-info__item:nth-child(2){
+    width: 291px;
+    background-image: url("../images/icons/icon-infected.svg");
+    padding-left: 58px;
+    border-right: 2px solid #F4CCD1;
+}
+
+.covid-info__item:nth-child(3){
+    width: 260px;
+    background-image: url("../images/icons/icon-recovered.svg");
+    padding-left: 58px;
+    border-right: 2px solid #F4CCD1;
+}
+
+.covid-info__item:nth-child(4){
+    width: 125px;
+    background-image: url("../images/icons/icon-dead.svg");
+    padding-left: 58px;
+}
+
+.covid-info__title{
+    margin-left: 68px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+}
+
+.covid-info__subtitle{
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.subtitle-color__red{
+    color: #DB0000;
+}
+
+.subtitle-color__green{
+    color: #05B135;
+}
+
+.subtitle-color__dark{
+    color: #000;
+}
+
+.covid-info__number{
+    margin: 0;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+}
+/* Covid section styles end */
+
+/* News section styles start */
+.news-section{
+    margin-bottom: 34px;
+}
+
+.news-section__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-section__item{
+    width: 386px;
+    margin-bottom: 18px;
+}
+
+.news-section__title{
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--main-text-color);
+}
+
+.news-section__time{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6B6D97;    
+}
+
+
+/* News section styles end */
 .site-alert{
     height: 91px;
     display: flex;
@@ -317,6 +348,8 @@ a{
     line-height: 24px;
     color: var(--main-bg-color);
     background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
-    border-radius: 5px;}
+    border-radius: 5px;
+    border: #FE5C28;
+}
 /******************** Main styles end *******************/
 
