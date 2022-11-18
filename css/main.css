@@ -34,6 +34,10 @@
     padding-left: 20px;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 /* DRY - Don't repeat yourself! */
 /* KISS - Keep it simple, stupid! */
 /* YAGNI - Your aren't gonna need it! */
@@ -192,3 +196,128 @@ a{
     height: 99px;
 }
 /******************** Aside styles end *******************/
+
+/******************** Main styles start *******************/
+.site-main{
+    background-color: #fff;
+}
+
+/* Covid section styles start */
+.covid-section{
+    margin-bottom: 18px;
+}
+
+.covid-info__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 72px;
+    padding-bottom: 29px;
+    padding-left: 35px;
+    width: 100%;
+    background-color: var(--popular-news-bg-color);
+    border-radius: 5px;
+}
+
+.covid-info__item{
+    display: block;
+    margin-right: 30px;
+    background-image: url("../images/icons/icon-covid.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.covid-info__item:nth-child(1){
+    width: 373px;
+    border-right: 2px solid #EB5569;
+}
+
+.covid-info__item:nth-child(2){
+    width: 291px;
+    background-image: url("../images/icons/icon-infected.svg");
+    padding-left: 58px;
+    border-right: 2px solid #F4CCD1;
+}
+
+.covid-info__item:nth-child(3){
+    width: 260px;
+    background-image: url("../images/icons/icon-recovered.svg");
+    padding-left: 58px;
+    border-right: 2px solid #F4CCD1;
+}
+
+.covid-info__item:nth-child(4){
+    width: 125px;
+    background-image: url("../images/icons/icon-dead.svg");
+    padding-left: 58px;
+}
+
+.covid-info__title{
+    margin-left: 68px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+}
+
+.covid-info__subtitle{
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.subtitle-color__red{
+    color: #DB0000;
+}
+
+.subtitle-color__green{
+    color: #05B135;
+}
+
+.subtitle-color__dark{
+    color: #000;
+}
+
+.covid-info__number{
+    margin: 0;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+}
+/* Covid section styles end */
+
+/* News section styles start */
+.news-section{
+    margin-bottom: 34px;
+}
+
+.news-section__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-section__item{
+    width: 386px;
+    margin-bottom: 18px;
+}
+
+.news-section__title{
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--main-text-color);
+}
+
+.news-section__time{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6B6D97;    
+}
+
+
+/* News section styles end */
+/******************** Main styles end *******************/
