@@ -316,4 +316,38 @@ a{
 
 
 /* News section styles end */
+
+/* Latest and popular news start */
+/* Latest news start */
+.latest-news__section{
+    width: 800px;
+}
+.latest-news-section__item{
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19px;
+}
+.latest-news-section__subtitle{
+    margin: 0;
+    padding: 0;
+}
+.section__data-time{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.latest-news__btn{
+    margin-top: 18px;
+    margin-left: 295px;
+    width: 211px;
+    height: 42px;
+    background: var(--footer-bg-color);
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+}
+/* Latest news end */
+/* Latest and popular news end */
 /******************** Main styles end *******************/
