@@ -1,166 +1,42 @@
 /************************** Fonts Styles **************************/
 /* rubik-regular - latin */
 @font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-Light.woff2') format('woff2'),
-        url('../fonts/Rubik-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/rubik-v21-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v21-latin-regular.woff")
+      format("woff"); /* Modern Browsers */
 }
-
+/* rubik-500 - latin */
 @font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-LightItalic.woff2') format('woff2'),
-        url('../fonts/Rubik-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/rubik-v21-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v21-latin-500.woff")
+      format("woff"); /* Modern Browsers */
 }
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-Black.woff2') format('woff2'),
-        url('../fonts/Rubik-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-Bold.woff2') format('woff2'),
-        url('../fonts/Rubik-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Rubik-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-ExtraBoldItalic.woff2') format('woff2'),
-        url('../fonts/Rubik-ExtraBoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-BoldItalic.woff2') format('woff2'),
-        url('../fonts/Rubik-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-BlackItalic.woff2') format('woff2'),
-        url('../fonts/Rubik-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-Light.woff2') format('woff2'),
-        url('../fonts/Rubik-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-Italic.woff2') format('woff2'),
-        url('../fonts/Rubik-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-SemiBoldItalic.woff2') format('woff2'),
-        url('../fonts/Rubik-SemiBoldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
-        url('../fonts/Rubik-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
-        url('../fonts/Rubik-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-SemiBold.woff2') format('woff2'),
-        url('../fonts/Rubik-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-LightItalic.woff2') format('woff2'),
-        url('../images/Rubik-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-MediumItalic.woff2') format('woff2'),
-        url('../fonts/Rubik-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-
 
 :root {
-    --main-bg-color: #fff;
-    --nav-text-color: #515151;
-    --main-text-color: #202020;
-    --news-time-text-color: #6B6D97;
-    --popular-news-bg-color: #f6f6f9;
-    --footer-bg-color: #295093;
+  --main-bg-color: #fff;
+  --nav-text-color: #515151;
+  --main-text-color: #202020;
+  --news-time-text-color: #6b6d97;
+  --popular-news-bg-color: #f6f6f9;
+  --footer-bg-color: #295093;
 }
 
 .container {
-    width: 1240px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
+  width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* DRY - Don't repeat yourself! */
@@ -173,328 +49,331 @@
 /* D - Dependecy Inversion */
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body {
-    font-family: "Rubik", "Arial", sans-serif;
-    font-weight: 500;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 500;
 }
 
 ul {
-    padding-left: 0;
-    list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  text-decoration: none;
 }
 
 /******************** Header styles start *******************/
 .site-header {
-    background-color: #fff;
-    padding-top: 40px;
-    padding-bottom: 18px;
-    border-top: 4px solid var(--footer-bg-color);
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  border-top: 4px solid var(--footer-bg-color);
 }
 
 .site-header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .site-header__start {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .site-header__logo {
-    display: block;
-    margin-right: 17px;
-    padding: 3px 6px 4px 8px;
-    background-color: var(--main-bg-color);
-    color: var(--footer-bg-color);
-    box-shadow: 0px 2px 6px #cacaca40;
-    border-radius: 5px;
+  display: block;
+  margin-right: 17px;
+  padding: 3px 6px 4px 8px;
+  background-color: var(--main-bg-color);
+  color: var(--footer-bg-color);
+  box-shadow: 0px 2px 6px #cacaca40;
+  border-radius: 5px;
 }
 
 .currency-list {
-    display: flex;
-    justify-content: space-between;
-    width: 258px;
+  display: flex;
+  justify-content: space-between;
+  width: 258px;
 }
 
 .currency-item {
-    font-size: 16px;
-    line-height: 19px;
-    color: #7A7A7A;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7a7a7a;
 }
 
 .currency-symbol {
-    font-weight: 700;
-    color: var(--footer-bg-color);
+  font-weight: 700;
+  color: var(--footer-bg-color);
 }
 
 .site-header__end {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .site-header__search {
-    width: 38.1px;
-    height: 40px;
-    margin-right: 22px;
-    background-color: var(--main-bg-color);
-    background-image: url("../images/icons/search-icon.svg");
-    background-position: center center;
-    background-size: 17.5px;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 5px;
+  width: 38.1px;
+  height: 40px;
+  margin-right: 22px;
+  background-color: var(--main-bg-color);
+  background-image: url("../images/icons/search-icon.svg");
+  background-position: center center;
+  background-size: 17.5px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 5px;
 }
 
 .site-header__languages {
-    margin-right: 23px;
-    padding: 10px 8px 10px 11px;
-    background-color: var(--main-bg-color);
-    border-radius: 5px;
+  margin-right: 23px;
+  padding: 10px 8px 10px 11px;
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
 }
 
 .site-header__languages-icon {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .site-header__languages-text {
-    font-size: 16px;
-    line-height: 19px;
-    color: #535353;
+  font-size: 16px;
+  line-height: 19px;
+  color: #535353;
 }
 
 .site-header__btn {
-    padding: 10px 12px 10px 10px;
-    background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--main-bg-color);
-
+  padding: 10px 12px 10px 10px;
+  background-image: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--main-bg-color);
 }
 
 .site-header__nav {
-    background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
 }
 
 .site-header__nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 21px 25px 22px 24px;
-    box-shadow: 0px 2px 5px #9f9f9f30;
-    border-radius: 5px
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 25px 22px 24px;
+  box-shadow: 0px 2px 5px #9f9f9f30;
+  border-radius: 5px;
 }
 
 .site-header__nav-link {
-    font-size: 19px;
-    line-height: 23px;
-    color: #515151;
+  font-size: 19px;
+  line-height: 23px;
+  color: #515151;
 }
-
 /******************** Header styles end *******************/
 
 /******************** Aside styles start *******************/
 .site-aside {
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 .site-aside__img {
-    width: 100%;
-    height: 99px;
+  width: 100%;
+  height: 99px;
 }
-
 /******************** Aside styles end *******************/
 
-/******************* main start *********************/
-.section1_wrapper {
-    display: flex;
-    align-items: center;
-    width: 1200px;
-    height: 133px;
-
-    background: #F6F6F9;
-    border-radius: 5px;
+/******************** Main styles start *******************/
+.site-main {
+  background-color: #fff;
 }
 
-.section1_wrapper_card1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 44px 25px 44px 35px;
-
+/* Covid section styles start */
+.covid-section {
+  margin-bottom: 18px;
 }
 
-.section1_wrapper_card1_left {
-    display: flex;
-    align-items: center;
+.covid-info__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 72px;
+  padding-bottom: 29px;
+  padding-left: 35px;
+  width: 100%;
+  background-color: var(--popular-news-bg-color);
+  border-radius: 5px;
 }
 
-.section1_wrapper_card1_rigth {
-    padding-left: 71px;
+.covid-info__item {
+  display: block;
+  margin-right: 30px;
+  background-image: url("../images/icons/icon-covid.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  content: "";
 }
 
-.section1_wrapper_card1 h4 {
-
-    width: 260px;
-
-    padding-left: 25px;
-
-
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
-
+.covid-info__item:nth-child(1) {
+  width: 373px;
+  border-right: 2px solid #eb5569;
 }
 
-.section1_wrapper_card2 {
-    display: flex;
-    align-items: center;
-    padding: 41px 42px 40px 24px;
+.covid-info__item:nth-child(2) {
+  width: 291px;
+  background-image: url("../images/icons/icon-infected.svg");
+  padding-left: 58px;
+  border-right: 2px solid #f4ccd1;
 }
 
-.section1_wrapper_card2_left {
-    display: flex;
-    align-items: center;
-
+.covid-info__item:nth-child(3) {
+  width: 260px;
+  background-image: url("../images/icons/icon-recovered.svg");
+  padding-left: 58px;
+  border-right: 2px solid #f4ccd1;
 }
 
-.change_color {
-    color: black;
+.covid-info__item:nth-child(4) {
+  width: 125px;
+  background-image: url("../images/icons/icon-dead.svg");
+  padding-left: 58px;
 }
 
-.section1_wrapper_card2_left img {
-
-    padding-bottom: 15px;
+.covid-info__title {
+  margin-left: 68px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
 }
 
-.section1_wrapper_card2_left p {
-    margin-left: 18px;
-    width: 150px;
-    height: 52px;
-
-
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-
-    color: #DB0000;
+.covid-info__subtitle {
+  margin: 0 0 5px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
-.section1_wrapper_card2_right {
-    padding-left: 42px;
+.subtitle-color__red {
+  color: #db0000;
 }
 
-.section1_wrapper_card3 {
-    display: flex;
-    align-items: center;
+.subtitle-color__green {
+  color: #05b135;
 }
 
-.card3_change_color p {
-    color: #05B135;
+.subtitle-color__dark {
+  color: #000;
 }
 
-.section1_wrapper_card3_right {
-    padding-left: 9px;
+.covid-info__number {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+}
+/* Covid section styles end */
+
+/* News section styles start */
+.news-section {
+  margin-bottom: 34px;
 }
 
-.section1_wrapper_card4_left {
-    display: flex;
-    align-items: center;
-    padding-left: 27px;
+.news-section__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.section1_wrapper_card4_end {
-    padding-left: 19px;
+.news-section__item {
+  width: 386px;
+  margin-bottom: 18px;
 }
 
-
-.section2_wrapper {
-    display: flex;
-    margin-top: 18px;
-    justify-content: space-between;
+.news-section__title {
+  font-size: 17px;
+  line-height: 20px;
+  color: var(--main-text-color);
 }
 
-.section2_wrapper_card {
-    width: 368px;
-    border-radius: 5px;
-
-
+.news-section__time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6b6d97;
 }
-
-.section2_wrapper_card h5 {
-
-    width: 380px;
-    height: 42px;
-    margin-top: 11px;
-
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 20px;
-
-    color: #202020;
-
+/* News section styles end */
+/******************** Main styles end *******************/
+/****Notification start*****/
+.notification-section {
+  margin-bottom: 38px;
 }
-
-.section2_wrapper_card p {
-    margin: 0px;
-    padding: 0px;
-    width: 125px;
-    height: 19px;
-    margin-top: 11px;
-
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-
-    color: #6B6D97;
-
+.notification-row {
+  width: 100%;
+  height: 91px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #efba542e;
+  border-radius: 5px;
 }
-
+.notification-section__start {
+  display: flex;
+  padding-left: 34px;
+}
+.notification-section__icon {
+  padding-right: 18px;
+}
+.notification-section__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.notification-section__end {
+  padding-right: 20px;
+}
+.notification-section__button {
+  background: linear-gradient(
+    90deg,
+    #fe5c28 0%,
+    rgba(255, 139, 54, 0.9) 88.43%
+  );
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 8px 8px 8px 15px;
+  color: var(--main-bg-color);
+}
+/****Notification end*****/
+******************** Main styles end *******************/
 .section3_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 34px;
-    margin-bottom: 30vh;
+
     width: 1200px;
     height: 91px;
-   
+
 
     background: rgba(239, 186, 84, 0.18);
     border-radius: 5px;
@@ -553,3 +432,118 @@ a {
 }
 
 /******************* main end *********************/
+
+/***************** main start****************/
+
+.section_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30vh;
+}
+
+.left__side {
+    width: 70%;
+}
+
+.left__side h3 {
+    margin-top: 38px;
+    margin-bottom: 13px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+.card {
+    display: flex;
+
+}
+
+.card_rigth_side {
+    margin-left: 19px;
+}
+
+.card_rigth_side h4 {
+    width: 434px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+
+    color: #202020;
+}
+
+.card_rigth_side p {
+    width: 400px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #434343;
+}
+
+.card_rigth_side time {
+    width: 512px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #7688A4;
+}
+
+.card_rigth_side time::before {
+    background-image: url('../images/icons/calendar.svg');
+}
+
+.right__side {
+    width: 30%;
+    margin-top: 46px;
+}
+
+.box h5 {
+    width: 280px;
+    margin-top: 16px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #202020;
+
+}
+
+.rigth__side_box_text {
+    width: 347px;
+    margin-top: 6px;
+    margin-bottom: 11px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+
+    color: #202020;
+}
+
+.box_time{
+    width: 117px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #7688A4;
+
+}
