@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /************************** Fonts Styles **************************/
 /* rubik-regular - latin */
 @font-face {
@@ -35,7 +42,8 @@
 }
 
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /* DRY - Don't repeat yourself! */
@@ -55,7 +63,8 @@
     border: 0;
     padding: 0;    
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -83,15 +92,25 @@ a{
 }
 
 .site-header__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 40px;
 }
 
 .site-header__start{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .site-header__logo{
@@ -100,13 +119,18 @@ a{
     padding: 3px 6px 4px 8px;
     background-color: var(--main-bg-color);
     color: var(--footer-bg-color);
-    box-shadow: 0px 2px 6px #cacaca40;
+    -webkit-box-shadow: 0px 2px 6px #cacaca40;
+            box-shadow: 0px 2px 6px #cacaca40;
     border-radius: 5px;
 }
 
 .currency-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 258px;
 }
 
@@ -122,8 +146,12 @@ a{
 }
 
 .site-header__end{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .site-header__search{
@@ -158,6 +186,8 @@ a{
 
 .site-header__btn{
     padding: 10px 12px 10px 10px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(15.07%, #1E96C8), color-stop(85.96%, #37AEE2));
+    background-image: -o-linear-gradient(left, #1E96C8 15.07%, #37AEE2 85.96%);
     background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
     border: none;
     border-radius: 5px;
@@ -171,11 +201,18 @@ a{
 }
 
 .site-header__nav-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 21px 25px 22px 24px;
-    box-shadow: 0px 2px 5px #9f9f9f30;
+    -webkit-box-shadow: 0px 2px 5px #9f9f9f30;
+            box-shadow: 0px 2px 5px #9f9f9f30;
     border-radius: 5px
 }
 
@@ -208,9 +245,15 @@ a{
 }
 
 .covid-info__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 30px;
     padding-right: 72px;
     padding-bottom: 29px;
@@ -295,9 +338,14 @@ a{
 }
 
 .news-section__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .news-section__item{
