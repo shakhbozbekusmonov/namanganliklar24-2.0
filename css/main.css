@@ -456,3 +456,102 @@ a{
 
 /* Site Mobile advertising end */
 /******************** Main styles end *******************/
+
+/******************** Footer styles start ***************/
+.site-footer {
+    padding-bottom: 13px;
+    background: var(--footer-bg-color);
+}
+
+.site-footer-wrapper{
+    margin-top: 38px;
+}
+/* Footer top styles start */
+.site-footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 18px 0 20px 0;
+    border-bottom: 3px solid #133C82;
+}
+
+.site-footer__link {
+    padding: 11px 12px 6px 9px;
+    background: #133C82;
+    border-radius: 5px;
+    color: var(--main-bg-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.site-footer__top-end {
+    display: flex;
+    align-items: center;
+}
+
+.site-footer__top-text {
+    margin-right: 17px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-bg-color);
+}
+
+.footer-top__link {
+    display: flex;
+    align-items: center;
+    padding: 9.31px 11px 9.31px 9.28px;
+    gap: 6.28px;
+    background: var(--main-bg-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--footer-bg-color);
+}
+/* Footer top styles end*/
+
+/* Footer bottom styles start*/
+.footer-bottom__list {
+    display: flex;
+    gap: 115px;
+}
+
+.footer-bottom__item:nth-child(1) {
+    width: 365px;
+}
+
+.footer-bottom__item:nth-child(2) {
+    width: 163px;
+}
+
+.footer-bottom__item:nth-child(3) {
+    width: 225px;
+}
+
+.footer-bottom__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.footer-bottom__item-list__item {
+    margin-top: 15px;
+}
+
+.footer-bottom__item-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.footer-bottom__item-list__link:nth-child(1) {
+    font-weight: 400;
+}
+/* Footer bottom styles end */
+/******************** Footer styles start ***************/
