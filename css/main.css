@@ -319,9 +319,15 @@ a{
 
 /* Latest and popular news start */
 /* Latest news start */
+.latest-popular-news{
+    display: flex;
+    justify-content: space-between;
+}
+
 .latest-news__section{
     width: 800px;
 }
+
 .latest-news-section__item{
     margin-top: 18px;
     display: flex;
@@ -329,15 +335,18 @@ a{
     align-items: center;
     gap: 19px;
 }
+
 .latest-news-section__subtitle{
     margin: 0;
     padding: 0;
 }
+
 .section__data-time{
     display: flex;
     align-items: center;
     gap: 4px;
 }
+
 .latest-news__btn{
     margin-top: 18px;
     margin-left: 295px;
@@ -349,5 +358,101 @@ a{
     color: #ffffff;
 }
 /* Latest news end */
+
+/* Popular news start */
+.popular-news__section{
+    width: 386px;
+}
+
+.popular-news-section__list{
+    width: 386px;
+    border-radius: 5px;
+    background-color: var(--popular-news-bg-color);
+}
+
+.popular-news-section__item{
+    margin: 0 auto;
+    width: 347px;
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.popular-news-section__title{
+    padding-top: 16px;
+    margin-left: 20px;
+    width: 300px;
+    height: 26px;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--main-text-color);
+
+}
+
+.popular-news-section__text{
+    margin-top: 18px;
+    width: 347px;
+    height: 62px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #202020;
+}
+
+.popular-news-section__time{
+    width: 117px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #7688A4;
+    
+}
+
+.usell-img{
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Popular news end */
 /* Latest and popular news end */
+
+/* Site Mobile advertising start */
+.site-mobile-advertising-wrapper{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    background: var(--popular-news-bg-color);
+    border-radius: 5px;
+}
+
+.phone-img{
+    margin-top: 37px;
+    margin-left: 19px;
+}
+
+.site-mobile-advertising__title{
+    width: 526px;
+    height: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #295093;
+}
+
+.site-mobile-advertising__text{
+    width: 515px;
+    height: 44px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.googleplayer-appstore{
+    width: 346px;
+    margin-left: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19px;
+}
+
+/* Site Mobile advertising end */
 /******************** Main styles end *******************/
