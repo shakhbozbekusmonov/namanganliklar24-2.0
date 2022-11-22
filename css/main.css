@@ -595,9 +595,7 @@
     color: #FFFFFF;
   }
   .footer-button-left-description{
-    width: 365px;
-    height: 121px;
-    padding-bottom: 20px;
+    width: 365px; 
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
