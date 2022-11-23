@@ -368,13 +368,16 @@ a {
 .latest-popular__news-section {
   margin-bottom: 58px;
 }
+.row-lastest__popular {
+  display: flex;
+}
 .row {
   display: flex;
   align-items: center;
 }
 .lastest-section_news {
   width: 783px;
-  height: 1039px;
+  /* height: 1039px; */
 }
 .lastest-section_news-title {
   font-size: 20px;
