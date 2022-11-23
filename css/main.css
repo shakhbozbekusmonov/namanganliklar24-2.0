@@ -668,6 +668,22 @@ a{
         -ms-flex-align: center;
             align-items: center;    
 }
+
+
+.site-btn__button{
+    margin: 40px auto;
+    padding: 10px 32px 10px 31px;
+    width: 211px;
+    height: 42px;
+    background-color: var(--footer-bg-color);
+    border-radius: 5px;
+}
+.site-btn_button{
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--main-bg-color);
+}
+
 .card__time{
     width: 512px;
     height: 19px;
@@ -707,13 +723,23 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
+        -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
 }
 
 .footer__icon-img{
     margin: 0 19px 0 0;
 }
+
+.site-footer{
+    width: 1440px;
+    height: 225px;
+    background-color: var(--footer-bg-color);
+}
+.site-footer__logo{
+    background-color:  var(--main-bg-color);
+}
+
 /******************** footer styles end *******************/
 
